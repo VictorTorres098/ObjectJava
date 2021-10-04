@@ -1,0 +1,18 @@
+Tads:
+SistemaVotacion
+	private turnos[]<dni, franjaHoraria>;
+	private Personas[];
+	private mesas[];
+Mesas 
+	private tipoMesa;
+	private franjaHoraria;
+	private cupo;
+	private presidenteMesa;
+Personas
+	private tieneCertificadoTrabajo;
+	private enfermedadPrexistente;
+	private dni;
+	private nombre;
+	private esMayorDeEdad;
+	private esPresiendenteDeMesa;
+Turno
