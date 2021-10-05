@@ -1,13 +1,25 @@
 Tads:
 SistemaVotacion
-	private turnos[]<dni, franjaHoraria>;
-	private Personas[];
-	private mesas[];
+	private turnos[];
+	private Votantes[];
+	private certificadoDeVoto[];
+	private mesa;
+	private franjaHoraria[10] <Persona, Mesa>; la cual en cada franja contiene las Mesas;
+	
+	acciones:
+	registrarVotante
+	asignarTurno
+	registradoEnPadron
 Mesas 
-	private tipoMesa;
+	private codigo;
+	private tipoMesa = /mayores/enfermedades preexistentes/trabajo;
 	private franjaHoraria;
 	private cupo;
 	private presidenteMesa;
+	
+	acciones:
+	designarPresidente
+	
 Personas
 	private tieneCertificadoTrabajo;
 	private enfermedadPrexistente;
@@ -16,3 +28,6 @@ Personas
 	private esMayorDeEdad;
 	private esPresiendenteDeMesa;
 Turno
+	horario
+	nombre
+	dni
