@@ -31,3 +31,18 @@ Turno
 	horario
 	nombre
 	dni
+	
+sitema:
+	lista votantes
+	
+	Acciones:
+	registrar votante
+	
+	Irep:
+	el dni debe ser valido
+	
+	Interface
+	public void registrarvotante(Integer dni, String nombre)
+	
+	asignarturno(Turno turno){
+	mesas.agregarTurno(turno)
